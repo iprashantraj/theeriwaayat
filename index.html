@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1C3F60" />
+  <title>Riwaayat Publications — Where Every Voice Becomes a Legacy</title>
+  <meta name="description" content="Riwaayat Publications — A book publishing house for writers who write with wounds, not just ink. Solo books, anthologies, and a thriving community of storytellers." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Harmattan:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+/* Inlined for preview/single-file portability — same as styles.css */
+:root{--navy:#1C3F60;--navy-deep:#142E47;--navy-soft:#24507A;--cream:#FFF1DA;--cream-dim:#E8DCC4;--white:#FFFFFF;--gold:#D4A867;--gold-bright:#E8C07D;--text:#FFF1DA;--text-dim:rgba(255,241,218,0.72);--text-soft:rgba(255,241,218,0.55);--font-display:'Della Respira','Cormorant Garamond',Georgia,serif;--font-body:'Harmattan','Inter',system-ui,-apple-system,sans-serif;--radius:14px;--radius-lg:22px;--max-w:1100px;--ease:cubic-bezier(0.22,1,0.36,1);--ease-bounce:cubic-bezier(0.34,1.56,0.64,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+*::selection{background:var(--cream);color:var(--navy)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);font-size:18px;line-height:1.6;color:var(--text);background:var(--navy);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:400;line-height:1.15;letter-spacing:0.5px}
+em{font-style:italic;color:var(--cream);font-family:var(--font-display)}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-bright);margin-bottom:16px;font-weight:500;position:relative;padding-left:32px}
+.eyebrow::before{content:'';position:absolute;left:0;top:50%;width:22px;height:1px;background:var(--gold)}
+.section-title{font-size:clamp(32px,8vw,52px);margin-bottom:14px;color:var(--white)}
+.section-sub{color:var(--text-dim);font-size:17px;margin-bottom:36px;max-width:560px}
+.topbar{position:fixed;top:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;z-index:100;background:rgba(28,63,96,0);backdrop-filter:blur(0);transition:all 0.4s var(--ease)}
+.topbar.scrolled{background:rgba(20,46,71,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,241,218,0.08)}
+.menu-btn{width:42px;height:42px;display:flex;flex-direction:column;justify-content:center;gap:5px;padding:10px;border-radius:8px;transition:background 0.3s}
+.menu-btn:hover{background:rgba(255,241,218,0.08)}
+.menu-btn span{width:22px;height:1.8px;background:var(--cream);border-radius:2px;transition:all 0.3s var(--ease)}
+.menu-btn.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn.open span:nth-child(2){opacity:0}
+.menu-btn.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.brand{display:flex;align-items:center;gap:6px}
+.brand-mark{display:flex;align-items:center}
+.brand-mark img{width:52px;height:52px;display:block;object-fit:contain}
+.brand-text{font-family:var(--font-display);font-size:18px;letter-spacing:3px;color:var(--white);text-transform:uppercase}
+.topbar-wa{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all 0.3s}
+.topbar-wa:hover{background:rgba(255,241,218,0.1);transform:scale(1.08)}
+.sidenav{position:fixed;top:0;left:0;bottom:0;width:82%;max-width:340px;background:var(--navy-deep);padding:80px 32px 32px;z-index:200;transform:translateX(-100%);transition:transform 0.5s var(--ease);display:flex;flex-direction:column;border-right:1px solid rgba(255,241,218,0.08)}
+.sidenav.open{transform:translateX(0)}
+.close-btn{position:absolute;top:16px;right:18px;width:38px;height:38px;font-size:32px;line-height:1;color:var(--cream);border-radius:50%;transition:all 0.3s}
+.close-btn:hover{background:rgba(255,241,218,0.1);transform:rotate(90deg)}
+.sidenav ul{list-style:none;flex:1}
+.sidenav li{margin:4px 0;opacity:0;transform:translateX(-20px);transition:all 0.5s var(--ease)}
+.sidenav.open li{opacity:1;transform:translateX(0)}
+.sidenav.open li:nth-child(1){transition-delay:0.1s}
+.sidenav.open li:nth-child(2){transition-delay:0.15s}
+.sidenav.open li:nth-child(3){transition-delay:0.2s}
+.sidenav.open li:nth-child(4){transition-delay:0.25s}
+.sidenav.open li:nth-child(5){transition-delay:0.3s}
+.sidenav.open li:nth-child(6){transition-delay:0.35s}
+.sidenav a{display:block;font-family:var(--font-display);font-size:24px;padding:14px 0;color:var(--cream);border-bottom:1px solid rgba(255,241,218,0.06);transition:padding 0.3s var(--ease),color 0.3s}
+.sidenav a:hover{padding-left:10px;color:var(--gold-bright)}
+.sidenav-foot{margin-top:24px}
+.sidenav-foot .quote{font-family:var(--font-display);font-style:italic;color:var(--text-soft);font-size:15px;line-height:1.5;border-left:2px solid var(--gold);padding-left:12px}
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:150;opacity:0;pointer-events:none;transition:opacity 0.4s}
+.backdrop.open{opacity:1;pointer-events:auto}
+.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;align-items:center;padding:100px 0 80px;overflow:hidden;background:radial-gradient(ellipse at top,rgba(36,80,122,0.6),transparent 60%),radial-gradient(ellipse at bottom,rgba(20,46,71,0.8),transparent 70%),var(--navy)}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.floral{position:absolute}
+.floral-1{top:10%;right:-40px;width:280px;animation:float 12s ease-in-out infinite}
+.floral-2{bottom:8%;left:-60px;width:320px;animation:float 14s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(3deg)}}
+.hero-inner{position:relative;text-align:center;padding:0 22px;width:100%;max-width:760px;margin:0 auto}
+.hero-logo{margin-bottom:-20px;margin-top:-40px;width:100%;display:flex;justify-content:center}
+.hero-logo img{width:clamp(260px,72vw,420px);height:auto;display:block}
+.hero-brand{font-family:var(--font-display);font-size:clamp(38px,10vw,72px);color:var(--white);line-height:1;letter-spacing:6px;margin-bottom:8px;font-weight:400;text-transform:uppercase;display:flex;flex-direction:column;align-items:center}
+.hero-brand-sub{font-family:var(--font-display);font-size:clamp(11px,2.6vw,16px);letter-spacing:8px;color:var(--cream);margin-top:6px;font-weight:400;opacity:0.95;padding-top:8px;border-top:1px solid rgba(255,241,218,0.25);width:80%;max-width:280px;text-align:center}
+.hero-tagline{font-family:var(--font-display);font-size:clamp(18px,4.8vw,28px);color:var(--gold-bright);line-height:1.4;margin:14px auto 28px;font-style:italic;max-width:520px;letter-spacing:0.5px}
+.hero-tagline em{color:var(--gold-bright);font-weight:600}
+.hero-sub{color:var(--text-dim);font-size:17px;line-height:1.6;margin:0 auto 38px;max-width:520px}
+.hero-cta{display:flex;flex-direction:column;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 32px;border-radius:50px;font-family:var(--font-body);font-size:16px;font-weight:700;letter-spacing:1px;transition:all 0.35s var(--ease);text-transform:uppercase;position:relative;overflow:hidden;min-height:52px}
+.btn-primary{background:var(--cream);color:var(--navy);box-shadow:0 6px 24px rgba(255,241,218,0.15)}
+.btn-primary:hover{background:var(--white);transform:translateY(-2px);box-shadow:0 10px 32px rgba(255,241,218,0.25)}
+.btn-primary:active{transform:translateY(0)}
+.btn-outline{background:transparent;color:var(--cream);border:1.5px solid rgba(255,241,218,0.4)}
+.btn-outline:hover{border-color:var(--cream);background:rgba(255,241,218,0.06)}
+.btn-full{width:100%}
+.btn-link{color:var(--cream);font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:10px;transition:opacity 0.3s}
+.btn-link span{display:inline-block;margin-left:6px;animation:bob 2s ease-in-out infinite}
+.btn-link:hover{opacity:0.7}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+.scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:22px;height:36px;border:1.5px solid rgba(255,241,218,0.3);border-radius:12px;display:flex;justify-content:center}
+.scroll-hint span{display:block;width:3px;height:7px;background:var(--cream);border-radius:2px;margin-top:7px;animation:scrollDot 1.8s ease-in-out infinite}
+@keyframes scrollDot{0%{opacity:0;transform:translateY(0)}40%{opacity:1}80%{opacity:0;transform:translateY(12px)}100%{opacity:0;transform:translateY(12px)}}
+.journey{padding:100px 0;position:relative;background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%)}
+.timeline{position:relative;margin-top:40px;padding-left:28px}
+.timeline::before{content:'';position:absolute;left:10px;top:8px;bottom:8px;width:1.5px;background:linear-gradient(180deg,var(--gold),transparent)}
+.tl-item{position:relative;margin-bottom:44px}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{position:absolute;left:-28px;top:8px;width:22px;height:22px;border-radius:50%;background:var(--navy);border:2px solid var(--gold);z-index:2}
+.tl-dot::after{content:'';position:absolute;inset:4px;background:var(--gold);border-radius:50%}
+.tl-dot-glow{box-shadow:0 0 0 0 rgba(212,168,103,0.6);animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,168,103,0.6)}100%{box-shadow:0 0 0 16px rgba(212,168,103,0)}}
+.tl-card{background:rgba(255,241,218,0.04);border:1px solid rgba(255,241,218,0.1);border-radius:var(--radius);padding:24px;transition:all 0.4s var(--ease)}
+.tl-card:hover{background:rgba(255,241,218,0.07);transform:translateY(-3px)}
+.tl-card-feature{background:linear-gradient(135deg,rgba(212,168,103,0.08),rgba(255,241,218,0.04));border-color:rgba(212,168,103,0.3)}
+.tl-year{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--gold-bright);text-transform:uppercase;margin-bottom:8px;font-weight:600}
+.tl-card h3{font-size:26px;color:var(--white);margin-bottom:4px}
+.tl-tag{font-family:var(--font-display);font-style:italic;color:var(--cream);font-size:17px;margin-bottom:12px}
+.tl-card p:last-child{color:var(--text-dim);font-size:16px;line-height:1.65}
+.stats{padding:60px 0;background:var(--navy-deep);border-top:1px solid rgba(255,241,218,0.08);border-bottom:1px solid rgba(255,241,218,0.08);position:relative}
+.stats .container{display:flex;flex-direction:column;gap:36px;align-items:center}
+.stat{text-align:center}
+.stat-num{font-family:var(--font-display);font-size:clamp(48px,12vw,72px);color:var(--gold-bright);line-height:1;display:inline-block}
+.stat-plus{font-family:var(--font-display);font-size:clamp(36px,9vw,54px);color:var(--gold);vertical-align:top;margin-left:2px}
+.stat-label{display:block;margin-top:8px;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim)}
+@media(min-width:700px){.stats .container{flex-direction:row;justify-content:space-around;gap:20px}.stat{flex:1}}
+.portfolio{padding:100px 0;background:var(--navy)}
+.sub-block{margin-top:60px}
+.sub-block:first-of-type{margin-top:40px}
+.sub-title{font-size:clamp(24px,6vw,32px);color:var(--white);margin-bottom:12px}
+.sub-desc{color:var(--text-dim);margin-bottom:28px;font-size:16px;max-width:600px}
+.solo-grid{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:720px){.solo-grid{grid-template-columns:1fr 1fr;gap:32px}}
+.solo-card{background:rgba(255,241,218,0.04);border:1px solid rgba(255,241,218,0.1);border-radius:var(--radius-lg);padding:24px;transition:all 0.5s var(--ease)}
+.solo-card:hover{transform:translateY(-6px);background:rgba(255,241,218,0.06);border-color:rgba(212,168,103,0.3);box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+.solo-cover{display:flex;justify-content:center;margin-bottom:22px;perspective:800px}
+.cover-mock{width:180px;aspect-ratio:2/3;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);border-radius:4px 8px 8px 4px;display:flex;flex-direction:column;justify-content:space-between;padding:22px 18px;color:var(--cream);box-shadow:inset 4px 0 0 rgba(212,168,103,0.3),0 12px 30px rgba(0,0,0,0.5),0 2px 4px rgba(0,0,0,0.3);position:relative;transform:rotateY(-8deg);transition:transform 0.5s var(--ease)}
+.solo-card:hover .cover-mock{transform:rotateY(0deg) scale(1.04)}
+.cover-mock::before{content:'';position:absolute;top:12px;left:12px;right:12px;bottom:12px;border:1px solid rgba(212,168,103,0.25);border-radius:2px;pointer-events:none}
+.cover-title{font-family:var(--font-display);font-size:18px;line-height:1.2;color:var(--gold-bright);text-align:center;margin-top:10px}
+.cover-title small{display:block;font-size:11px;color:var(--text-dim);margin-top:4px;font-style:italic}
+.cover-author{font-family:var(--font-body);font-size:11px;letter-spacing:2px;text-transform:uppercase;text-align:center;color:var(--text-dim)}
+.cover-mark{font-family:var(--font-display);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-align:center;opacity:0.8}
+.cover-1{background:linear-gradient(160deg,#2a1f15,#0a0a0a)}
+.cover-2{background:linear-gradient(160deg,#1f1a14,#050505)}
+.cover-ex{background:linear-gradient(150deg,#1a1310,#050302)}
+.solo-meta h4{font-size:24px;color:var(--white);margin-bottom:4px}
+.solo-author{font-family:var(--font-display);font-style:italic;color:var(--gold-bright);margin-bottom:10px;font-size:16px}
+.solo-meta p:last-child{color:var(--text-dim);font-size:15px;line-height:1.6}
+.carousel{position:relative;margin:0 -22px;padding:10px 0 20px}
+.carousel-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 22px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-card{flex:0 0 auto;scroll-snap-align:center;transition:transform 0.4s var(--ease)}
+.carousel-card .cover-mock{width:200px;transform:rotateY(0);transition:all 0.5s var(--ease)}
+.carousel-card:hover .cover-mock{transform:translateY(-8px) scale(1.03);box-shadow:0 24px 50px rgba(0,0,0,0.6),inset 4px 0 0 rgba(212,168,103,0.4)}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:18px}
+.carousel-dots button{width:8px;height:8px;border-radius:50%;background:rgba(255,241,218,0.25);transition:all 0.3s;padding:0}
+.carousel-dots button.active{background:var(--gold-bright);transform:scale(1.4)}
+.accordion{margin-top:4px}
+.accordion details{background:rgba(255,241,218,0.03);border:1px solid rgba(255,241,218,0.08);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;transition:all 0.4s var(--ease)}
+.accordion details[open]{background:rgba(255,241,218,0.06);border-color:rgba(212,168,103,0.25)}
+.accordion summary{list-style:none;padding:18px 22px;font-family:var(--font-display);font-size:19px;color:var(--cream);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color 0.3s}
+.accordion summary::-webkit-details-marker{display:none}
+.accordion summary:hover{color:var(--gold-bright)}
+.acc-icon{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(212,168,103,0.4);border-radius:50%;font-size:18px;color:var(--gold-bright);transition:all 0.4s var(--ease);font-family:var(--font-body)}
+.accordion details[open] .acc-icon{transform:rotate(135deg);background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.accordion ul{list-style:none;padding:4px 22px 22px;columns:1}
+@media(min-width:600px){.accordion ul{columns:2;column-gap:30px}}
+.accordion li{font-family:var(--font-display);font-size:16px;font-style:italic;color:var(--text-dim);padding:7px 0;border-bottom:1px solid rgba(255,241,218,0.06);break-inside:avoid}
+.accordion li::before{content:'✦ ';color:var(--gold);margin-right:6px;font-style:normal}
+.packages{padding:100px 0;background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%)}
+.pkg-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:12px}
+@media(min-width:900px){.pkg-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.pkg-card{background:rgba(255,241,218,0.04);border:1px solid rgba(255,241,218,0.1);border-radius:var(--radius-lg);padding:36px 28px;position:relative;transition:all 0.5s var(--ease);display:flex;flex-direction:column}
+.pkg-card:hover{transform:translateY(-6px);border-color:rgba(212,168,103,0.4);box-shadow:0 22px 50px rgba(0,0,0,0.35);background:rgba(255,241,218,0.06)}
+.pkg-feature{background:linear-gradient(160deg,rgba(212,168,103,0.12),rgba(255,241,218,0.04));border-color:rgba(212,168,103,0.4)}
+@media(min-width:900px){.pkg-feature{transform:scale(1.03)}.pkg-feature:hover{transform:translateY(-6px) scale(1.03)}}
+.pkg-ribbon{position:absolute;top:-1px;right:24px;background:var(--gold);color:var(--navy);padding:6px 14px;border-radius:0 0 8px 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.pkg-num{font-family:var(--font-display);font-size:14px;color:var(--gold);letter-spacing:4px;margin-bottom:14px;display:block}
+.pkg-title{font-size:28px;color:var(--white);margin-bottom:14px;line-height:1.15}
+.pkg-price{font-family:var(--font-display);font-size:52px;color:var(--gold-bright);line-height:1;margin-bottom:6px}
+.pkg-price .rupee{font-size:32px;vertical-align:top;margin-right:2px}
+.pkg-price-small{font-family:var(--font-display);font-size:18px;color:var(--cream);margin-bottom:6px}
+.pkg-price-small strong{color:var(--gold-bright);font-weight:400}
+.pkg-tag{color:var(--text-dim);font-size:15px;font-style:italic;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid rgba(255,241,218,0.1)}
+.pkg-list{list-style:none;margin-bottom:24px;flex-grow:1}
+.pkg-list li{padding:10px 0;border-bottom:1px solid rgba(255,241,218,0.06);font-size:15px;display:flex;flex-direction:column}
+.pkg-list li:last-child{border-bottom:none}
+.pkg-list strong{color:var(--cream);font-weight:700;font-size:15px;margin-bottom:2px}
+.pkg-list strong::before{content:'✦  ';color:var(--gold)}
+.pkg-list span{color:var(--text-dim);font-size:14px;padding-left:22px}
+.pkg-foot{font-family:var(--font-display);font-style:italic;color:var(--gold-bright);font-size:15px;text-align:center;margin-bottom:20px;line-height:1.4}
+.benefits{padding:90px 0;background:var(--navy-deep);text-align:center}
+.benefit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+@media(min-width:720px){.benefit-grid{grid-template-columns:repeat(5,1fr)}}
+.benefit{background:rgba(255,241,218,0.03);border:1px solid rgba(255,241,218,0.08);border-radius:var(--radius);padding:26px 16px;transition:all 0.4s var(--ease)}
+.benefit:hover{transform:translateY(-4px);border-color:rgba(212,168,103,0.35);background:rgba(255,241,218,0.06)}
+.b-icon{font-size:22px;color:var(--gold-bright);margin-bottom:10px}
+.benefit h4{font-size:16px;color:var(--white);font-family:var(--font-display);letter-spacing:0.5px}
+.benefit p{font-size:12px;color:var(--text-dim);margin-top:4px;letter-spacing:1px;text-transform:uppercase}
+.community{padding:100px 0;text-align:center;background:radial-gradient(ellipse at center,rgba(212,168,103,0.08),transparent 70%),var(--navy);position:relative}
+.community .container{max-width:720px}
+.community-actions{display:flex;flex-direction:column;gap:14px;margin:36px auto 40px;max-width:420px}
+.legacy-quote{font-family:var(--font-display);font-style:italic;font-size:19px;color:var(--gold-bright);margin-top:24px;position:relative;display:inline-block}
+.legacy-quote::before,.legacy-quote::after{content:'';position:absolute;top:50%;width:30px;height:1px;background:var(--gold)}
+.legacy-quote::before{right:100%;margin-right:14px}
+.legacy-quote::after{left:100%;margin-left:14px}
+.footer{background:var(--navy-deep);padding:70px 0 100px;border-top:1px solid rgba(255,241,218,0.08)}
+.footer .container{display:grid;grid-template-columns:1fr;gap:40px;text-align:center}
+@media(min-width:720px){.footer .container{grid-template-columns:1.5fr 1fr 1fr;text-align:left}.footer-brand{text-align:left}}
+.footer-brand svg{margin:0 auto 14px}
+.footer-logo{width:120px;height:120px;margin:0 auto -6px;display:block;object-fit:contain}
+@media(min-width:720px){.footer-brand svg{margin-left:0}.footer-logo{margin-left:0;margin-right:auto}}
+.footer-name{font-family:var(--font-display);font-size:22px;letter-spacing:4px;text-transform:uppercase;color:var(--white);margin-bottom:6px}
+.footer-tag{font-family:var(--font-display);font-style:italic;color:var(--gold-bright);font-size:15px}
+.footer h4{font-family:var(--font-display);font-size:17px;letter-spacing:2px;color:var(--gold-bright);text-transform:uppercase;margin-bottom:16px}
+.footer-contact a{display:block;color:var(--text-dim);padding:5px 0;font-size:15px;transition:color 0.3s}
+.footer-contact a:hover{color:var(--cream)}
+.socials{display:flex;gap:14px;justify-content:center}
+@media(min-width:720px){.socials{justify-content:flex-start}}
+.socials a{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,241,218,0.2);border-radius:50%;color:var(--cream);transition:all 0.4s var(--ease)}
+.socials a:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-3px)}
+.footer-bottom{grid-column:1 / -1;border-top:1px solid rgba(255,241,218,0.08);padding-top:24px;margin-top:16px;color:var(--text-soft);font-size:13px;text-align:center;letter-spacing:1px}
+.fab{position:fixed;bottom:20px;right:20px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,0.4);z-index:90;transition:all 0.4s var(--ease);animation:fabPulse 2.5s ease-out infinite}
+.fab:hover{transform:scale(1.1);box-shadow:0 12px 30px rgba(37,211,102,0.6)}
+.fab:active{transform:scale(0.96)}
+@keyframes fabPulse{0%{box-shadow:0 8px 24px rgba(37,211,102,0.4),0 0 0 0 rgba(37,211,102,0.5)}70%{box-shadow:0 8px 24px rgba(37,211,102,0.4),0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 8px 24px rgba(37,211,102,0.4),0 0 0 0 rgba(37,211,102,0)}}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.9s var(--ease),transform 0.9s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}.reveal{opacity:1;transform:none}}
+@media(max-width:360px){body{font-size:16px}.container{padding:0 16px}.pkg-card{padding:30px 22px}}
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="topbar" id="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#hero" class="brand">
+      <span class="brand-mark">
+        <img src="logo.png" alt="Riwaayat" />
+      </span>
+      <span class="brand-text">Riwaayat</span>
+    </a>
+
+    <a href="https://chat.whatsapp.com/G2OPxiZoI4bIzc81zvk9o1" class="topbar-wa" target="_blank" rel="noopener" aria-label="WhatsApp Community">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="#FFF1DA"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.296-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.296-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+    </a>
+  </header>
+
+  <!-- ===== SIDE NAV ===== -->
+  <nav class="sidenav" id="sidenav" aria-hidden="true">
+    <button class="close-btn" id="closeBtn" aria-label="Close menu">×</button>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#journey">Our Journey</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="sidenav-foot">
+      <p class="quote">"Some books are written with ink.<br/>Some are written with wounds."</p>
+    </div>
+  </nav>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <svg class="floral floral-1" viewBox="0 0 200 200" aria-hidden="true">
+        <path d="M100 20 Q120 60, 100 100 T100 180" stroke="#FFF1DA" stroke-width="0.8" fill="none" opacity="0.3"/>
+        <path d="M60 60 Q100 80, 140 60" stroke="#FFF1DA" stroke-width="0.6" fill="none" opacity="0.25"/>
+        <circle cx="100" cy="100" r="2" fill="#FFF1DA" opacity="0.4"/>
+      </svg>
+      <svg class="floral floral-2" viewBox="0 0 200 200" aria-hidden="true">
+        <path d="M50 100 Q100 50, 150 100 T 250 100" stroke="#FFF1DA" stroke-width="0.6" fill="none" opacity="0.2"/>
+        <circle cx="50" cy="100" r="1.5" fill="#FFF1DA" opacity="0.35"/>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-logo reveal">
+        <img src="logo.png" alt="Riwaayat Publications" />
+      </div>
+      <h1 class="hero-brand reveal">RIWAAYAT<span class="hero-brand-sub">Publications</span></h1>
+      <p class="hero-tagline reveal">Where Every Voice Becomes a <em>Legacy</em></p>
+      <p class="hero-sub reveal">A publishing house for writers who write with wounds, not just ink. Solo books, anthologies, and a community that carries your words forward.</p>
+
+      <div class="hero-cta reveal">
+        <a href="https://chat.whatsapp.com/G2OPxiZoI4bIzc81zvk9o1" target="_blank" rel="noopener" class="btn btn-primary">Join Our Community</a>
+        <a href="#packages" class="btn-link">Explore Packages <span>↓</span></a>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== OUR JOURNEY ===== -->
+  <section class="journey" id="journey">
+    <div class="container">
+      <p class="eyebrow reveal">Our Journey</p>
+      <h2 class="section-title reveal">From <em>WePublish</em><br/>to <em>Riwaayat</em></h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">March 23, 2024</span>
+            <h3>The Commencement</h3>
+            <p class="tl-tag">WePublish Publication</p>
+            <p>Our journey began with a mission to democratize publishing — an accessible, collaborative platform for emerging writers to share their stories with the world, laying the groundwork for a thriving literary community.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot tl-dot-glow"></div>
+          <div class="tl-card tl-card-feature">
+            <span class="tl-year">April 24, 2026</span>
+            <h3>The Premium Evolution</h3>
+            <p class="tl-tag">Riwaayat Publications</p>
+            <p>After two years of empowering authors, we transformed. Dedicated to literary tradition, high-end formatting, and elite minimalist aesthetics — <em>Riwaayat</em> signifies carrying forward the timeless custom of storytelling with a modern, sophisticated edge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT STATS ===== -->
+  <section class="stats" id="stats" aria-label="Impact and Community">
+    <div class="container">
+      <div class="stat reveal">
+        <span class="stat-num" data-count="420">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Active Community Members</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-count="180">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Instagram Followers</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-count="30">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Solo &amp; Anthology Projects</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <p class="eyebrow reveal">Our Portfolio</p>
+      <h2 class="section-title reveal">Stories We've<br/><em>Brought to Life</em></h2>
+
+      <!-- Premium Solo -->
+      <div class="sub-block">
+        <h3 class="sub-title reveal">Premium Solo Releases</h3>
+        <p class="sub-desc reveal">Our dedicated solo publishing track takes an author's raw manuscript and transforms it into a polished, market-ready masterpiece with striking cover art and professional formatting.</p>
+
+        <div class="solo-grid">
+          <article class="solo-card reveal">
+            <div class="solo-cover">
+              <div class="cover-mock cover-1">
+                <span class="cover-title">From Seeds<br/>to Shades</span>
+                <span class="cover-author">Kartik Aggrawal</span>
+              </div>
+            </div>
+            <div class="solo-meta">
+              <h4>From Seeds to Shades</h4>
+              <p class="solo-author">Kartik Aggrawal</p>
+              <p>A beautifully crafted solo release navigating growth, transformation, and life's evolving shades. Riwaayat handled the complete production to bring the author's distinct vision to the page.</p>
+            </div>
+          </article>
+
+          <article class="solo-card reveal">
+            <div class="solo-cover">
+              <div class="cover-mock cover-2">
+                <span class="cover-title">Main theek<br/>ho raha hoon</span>
+                <span class="cover-author">Mohit Chikni</span>
+              </div>
+            </div>
+            <div class="solo-meta">
+              <h4>Main theek ho raha hoon</h4>
+              <p class="solo-author">Mohit Chikni</p>
+              <p>A deeply personal and resonant collection. Riwaayat executed this launch end-to-end — rigorous manuscript review, custom premium cover design, and a dedicated video marketing campaign.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Riwaayat Exclusives -->
+      <div class="sub-block">
+        <h3 class="sub-title reveal">Riwaayat Exclusives</h3>
+        <p class="sub-desc reveal">Our latest, highly selective collaborations — featuring the signature black-and-gold premium aesthetic.</p>
+
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-card"><div class="cover-mock cover-ex"><span class="cover-title">Little Things<br/>That Stayed</span><span class="cover-mark">Riwaayat</span></div></div>
+            <div class="carousel-card"><div class="cover-mock cover-ex"><span class="cover-title">I am sorry<br/>to my younger self</span><span class="cover-mark">Riwaayat</span></div></div>
+            <div class="carousel-card"><div class="cover-mock cover-ex"><span class="cover-title">वो अनकहा ख़त<br/><small>The letter I never sent</small></span><span class="cover-mark">Riwaayat</span></div></div>
+            <div class="carousel-card"><div class="cover-mock cover-ex"><span class="cover-title">Riwaayat-e-Dil</span><span class="cover-mark">Riwaayat</span></div></div>
+            <div class="carousel-card"><div class="cover-mock cover-ex"><span class="cover-title">The Library<br/>at Dusk</span><span class="cover-mark">Riwaayat</span></div></div>
+            <div class="carousel-card"><div class="cover-mock cover-ex"><span class="cover-title">They Don't know<br/>what I am<br/>talking about</span><span class="cover-mark">Riwaayat</span></div></div>
+          </div>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </div>
+
+      <!-- Legacy Collections -->
+      <div class="sub-block">
+        <h3 class="sub-title reveal">Legacy &amp; Community Collections</h3>
+        <p class="sub-desc reveal">A selection of our celebrated upcoming and published community anthologies, curated by theme.</p>
+
+        <div class="accordion reveal">
+          <details>
+            <summary>Emotions &amp; Relationships <span class="acc-icon">+</span></summary>
+            <ul>
+              <li>One Heart, No Reply</li>
+              <li>Between their Prayer</li>
+              <li>Relationship (रिश्ते)</li>
+              <li>Desire</li>
+              <li>Forgiveness</li>
+              <li>जज़्बात through अल्फ़ाज़</li>
+              <li>अभिलाषा</li>
+              <li>अधूरे अल्फाज</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Life &amp; Solitude <span class="acc-icon">+</span></summary>
+            <ul>
+              <li>The Secrets of Solitude</li>
+              <li>Mysterious moment of life</li>
+              <li>The Serenity of a Silent Night</li>
+              <li>The Kid Within</li>
+              <li>Woh Din</li>
+              <li>परिवर्तन</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Nature &amp; Faith <span class="acc-icon">+</span></summary>
+            <ul>
+              <li>Wonders of Earth</li>
+              <li>The Need — Environment Conservation</li>
+              <li>शिव शक्ति</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Thoughts &amp; Imagination <span class="acc-icon">+</span></summary>
+            <ul>
+              <li>A Million Thoughts</li>
+              <li>एक कलम और कागज़</li>
+              <li>Let's Create Magic</li>
+              <li>The great world of Science</li>
+              <li>Minerva</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <p class="eyebrow reveal">Choose Your Path</p>
+      <h2 class="section-title reveal">Your Publishing<br/><em>Journey Awaits</em></h2>
+      <p class="section-sub reveal">Three paths. One destination — your words, in print.</p>
+
+      <div class="pkg-grid">
+        <!-- PKG 1 -->
+        <article class="pkg-card reveal">
+          <span class="pkg-num">01</span>
+          <h3 class="pkg-title">Solo Book Package</h3>
+          <div class="pkg-price"><span class="rupee">₹</span>799</div>
+          <p class="pkg-tag">The complete, high-value solo publishing deal</p>
+          <ul class="pkg-list">
+            <li><strong>Manuscript Formatting</strong><span>Professional layout (up to 150 pages)</span></li>
+            <li><strong>Cover Designing</strong><span>Premium, customized book cover</span></li>
+            <li><strong>ISBN Allotment</strong><span>Official global registration</span></li>
+            <li><strong>100% Royalty</strong><span>You keep all profits from your sales</span></li>
+            <li><strong>Proper Advertisement</strong><span>Active marketing push</span></li>
+            <li><strong>Deliverables</strong><span>1 Hardcopy Book + Certificate, delivered</span></li>
+          </ul>
+          <p class="pkg-foot">Not just publication. Your identity as an author.</p>
+          <a href="https://wa.me/919931202348?text=Hi%2C%20I'm%20interested%20in%20the%20Solo%20Book%20Package" target="_blank" rel="noopener" class="btn btn-primary btn-full">Get Started</a>
+        </article>
+
+        <!-- PKG 2 -->
+        <article class="pkg-card pkg-feature reveal">
+          <span class="pkg-ribbon">Most Popular</span>
+          <span class="pkg-num">02</span>
+          <h3 class="pkg-title">Paid Anthology Package</h3>
+          <div class="pkg-price-small">Compiler <strong>FREE</strong> · Co-authors <strong>₹350</strong></div>
+          <p class="pkg-tag">For serious compilers &amp; co-authors wanting physical copies</p>
+          <ul class="pkg-list">
+            <li><strong>Manuscript Compilation</strong><span>Flawless formatting for all co-authors</span></li>
+            <li><strong>Cover &amp; ISBN</strong><span>Premium cover + official ISBN allotment</span></li>
+            <li><strong>Proper Advertisement</strong><span>Active promotional support</span></li>
+            <li><strong>Deliverables</strong><span>Hardcopy Book + Certificate for each participant</span></li>
+            <li><strong>Compiler Benefits</strong><span>FREE entry · 80% royalty · Book + Certificate</span></li>
+          </ul>
+          <p class="pkg-foot">Create together. Earn together.</p>
+          <a href="https://wa.me/919931202348?text=Hi%2C%20I'm%20interested%20in%20the%20Paid%20Anthology%20Package" target="_blank" rel="noopener" class="btn btn-primary btn-full">Get Started</a>
+        </article>
+
+        <!-- PKG 3 -->
+        <article class="pkg-card reveal">
+          <span class="pkg-num">03</span>
+          <h3 class="pkg-title">Free Anthology Package</h3>
+          <div class="pkg-price-small"><strong>FREE</strong> for all</div>
+          <p class="pkg-tag">The portfolio builder for new writers</p>
+          <ul class="pkg-list">
+            <li><strong>Editing &amp; Formatting</strong><span>Included for the submitted piece</span></li>
+            <li><strong>Cover &amp; Publication</strong><span>Professional cover + digital launch</span></li>
+            <li><strong>Deliverables</strong><span>Official E-Certificate of Participation</span></li>
+            <li><strong>Optional Add-ons</strong><span>Hardcopy Book &amp; Certificate available at extra cost</span></li>
+          </ul>
+          <p class="pkg-foot">A first step for every writer. A forever place for your words.</p>
+          <a href="https://wa.me/919931202348?text=Hi%2C%20I'm%20interested%20in%20the%20Free%20Anthology%20Package" target="_blank" rel="noopener" class="btn btn-outline btn-full">Join Free</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT YOU GET ALWAYS ===== -->
+  <section class="benefits">
+    <div class="container">
+      <p class="eyebrow reveal">What You Get, Always</p>
+      <h2 class="section-title reveal">Promises We<br/><em>Always Keep</em></h2>
+
+      <div class="benefit-grid">
+        <div class="benefit reveal"><div class="b-icon">✦</div><h4>Professional Formatting</h4></div>
+        <div class="benefit reveal"><div class="b-icon">✦</div><h4>Premium Designing</h4></div>
+        <div class="benefit reveal"><div class="b-icon">✦</div><h4>Global Reach</h4><p>ISBN Registered</p></div>
+        <div class="benefit reveal"><div class="b-icon">✦</div><h4>Active Promotions</h4></div>
+        <div class="benefit reveal"><div class="b-icon">✦</div><h4>Quality Deliverables</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY CTA ===== -->
+  <section class="community" id="community">
+    <div class="container">
+      <p class="eyebrow reveal">Join the Riwaayat Community</p>
+      <h2 class="section-title reveal">Be part of a community that<br/><em>writes, supports, and grows</em> together.</h2>
+      <p class="section-sub reveal">420+ writers. One shared love for storytelling.</p>
+
+      <div class="community-actions reveal">
+        <a href="https://chat.whatsapp.com/G2OPxiZoI4bIzc81zvk9o1" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right:8px;vertical-align:-4px"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+          Join WhatsApp Community
+        </a>
+        <a href="https://www.instagram.com/thee.riwaayat/" target="_blank" rel="noopener" class="btn btn-outline btn-full">Follow on Instagram</a>
+      </div>
+
+      <p class="legacy-quote reveal">"Your words deserve a place beyond drafts."</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Riwaayat Publications" class="footer-logo" />
+        <p class="footer-name">Riwaayat Publications</p>
+        <p class="footer-tag">Where Every Voice Becomes a Legacy</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <a href="mailto:thee.riwaayat@gmail.com">thee.riwaayat@gmail.com</a>
+        <a href="tel:+919931202348">+91 99312 02348</a>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/thee.riwaayat/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311C8.416 2.212 8.8 2.2 12 2.2zm0 1.8c-3.155 0-3.516.012-4.755.069-1.064.05-1.643.227-2.027.376a3.39 3.39 0 00-1.226.797 3.39 3.39 0 00-.797 1.226c-.149.384-.327.963-.376 2.027-.057 1.239-.069 1.6-.069 4.755 0 3.155.012 3.516.069 4.755.05 1.064.227 1.643.376 2.027.176.454.387.785.797 1.226.441.41.772.621 1.226.797.384.149.963.327 2.027.376 1.239.057 1.6.069 4.755.069 3.155 0 3.516-.012 4.755-.069 1.064-.05 1.643-.227 2.027-.376a3.39 3.39 0 001.226-.797 3.39 3.39 0 00.797-1.226c.149-.384.327-.963.376-2.027.057-1.239.069-1.6.069-4.755 0-3.155-.012-3.516-.069-4.755-.05-1.064-.227-1.643-.376-2.027a3.39 3.39 0 00-.797-1.226 3.39 3.39 0 00-1.226-.797c-.384-.149-.963-.327-2.027-.376C15.516 4.012 15.155 4 12 4zm0 3.06A4.94 4.94 0 1112 17a4.94 4.94 0 010-9.88zm0 1.8a3.14 3.14 0 100 6.28 3.14 3.14 0 000-6.28zm5.137-2.04a1.155 1.155 0 110 2.31 1.155 1.155 0 010-2.31z"/></svg>
+          </a>
+          <a href="https://chat.whatsapp.com/G2OPxiZoI4bIzc81zvk9o1" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Riwaayat Publications · From WePublish, est. 2024</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://chat.whatsapp.com/G2OPxiZoI4bIzc81zvk9o1" class="fab" target="_blank" rel="noopener" aria-label="Join WhatsApp Community">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.296-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.296-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const topbar=document.getElementById('topbar');
+  const onScroll=()=>{if(window.scrollY>30)topbar.classList.add('scrolled');else topbar.classList.remove('scrolled');};
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  const menuBtn=document.getElementById('menuBtn'),closeBtn=document.getElementById('closeBtn'),sidenav=document.getElementById('sidenav'),backdrop=document.getElementById('backdrop');
+  const openMenu=()=>{sidenav.classList.add('open');backdrop.classList.add('open');menuBtn.classList.add('open');sidenav.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';};
+  const closeMenu=()=>{sidenav.classList.remove('open');backdrop.classList.remove('open');menuBtn.classList.remove('open');sidenav.setAttribute('aria-hidden','true');document.body.style.overflow='';};
+  menuBtn.addEventListener('click',openMenu);closeBtn.addEventListener('click',closeMenu);backdrop.addEventListener('click',closeMenu);
+  sidenav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+  const revealEls=document.querySelectorAll('.reveal');
+  const io=new IntersectionObserver((entries)=>{entries.forEach((e)=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  revealEls.forEach(el=>io.observe(el));
+  const stats=document.querySelectorAll('.stat-num'),counted=new WeakSet();
+  const animate=(el)=>{const target=parseInt(el.dataset.count,10),duration=1600,start=performance.now();
+    const tick=(now)=>{const t=Math.min((now-start)/duration,1),eased=1-Math.pow(1-t,3);el.textContent=Math.floor(eased*target);if(t<1)requestAnimationFrame(tick);else el.textContent=target;};
+    requestAnimationFrame(tick);};
+  const statObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting&&!counted.has(e.target)){counted.add(e.target);animate(e.target);}});},{threshold:0.5});
+  stats.forEach(s=>statObs.observe(s));
+  const track=document.getElementById('carouselTrack'),dotsEl=document.getElementById('carouselDots');
+  if(track&&dotsEl){const cards=track.querySelectorAll('.carousel-card');
+    cards.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label',`Go to slide ${i+1}`);if(i===0)b.classList.add('active');
+      b.addEventListener('click',()=>{const card=cards[i],left=card.offsetLeft-(track.clientWidth-card.clientWidth)/2;track.scrollTo({left,behavior:'smooth'});});dotsEl.appendChild(b);});
+    let raf;track.addEventListener('scroll',()=>{if(raf)cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(()=>{const center=track.scrollLeft+track.clientWidth/2;let active=0,min=Infinity;
+        cards.forEach((c,i)=>{const cc=c.offsetLeft+c.clientWidth/2,d=Math.abs(cc-center);if(d<min){min=d;active=i;}});
+        dotsEl.querySelectorAll('button').forEach((b,i)=>{b.classList.toggle('active',i===active);});});},{passive:true});}
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',(e)=>{const id=a.getAttribute('href');if(id.length>1){const target=document.querySelector(id);if(target){e.preventDefault();const y=target.getBoundingClientRect().top+window.scrollY-56;window.scrollTo({top:y,behavior:'smooth'});}}});});
+  const florals=document.querySelectorAll('.floral');
+  if(florals.length&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    window.addEventListener('scroll',()=>{const y=window.scrollY;if(y<800){florals.forEach((f,i)=>{const speed=i===0?0.15:-0.12;f.style.transform=`translateY(${y*speed}px)`;});}},{passive:true});}
+});
+  </script>
+</body>
+</html>
