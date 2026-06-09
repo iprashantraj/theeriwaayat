@@ -56,7 +56,6 @@ em{font-style:italic;color:var(--cream);font-family:var(--font-display)}
 .sidenav.open li:nth-child(4){transition-delay:0.25s}
 .sidenav.open li:nth-child(5){transition-delay:0.3s}
 .sidenav.open li:nth-child(6){transition-delay:0.35s}
-.sidenav.open li:nth-child(7){transition-delay:0.4s}
 .sidenav a{display:block;font-family:var(--font-display);font-size:24px;padding:14px 0;color:var(--cream);border-bottom:1px solid rgba(255,241,218,0.06);transition:padding 0.3s var(--ease),color 0.3s}
 .sidenav a:hover{padding-left:10px;color:var(--gold-bright)}
 .sidenav-foot{margin-top:24px}
@@ -92,33 +91,6 @@ em{font-style:italic;color:var(--cream);font-family:var(--font-display)}
 .scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:22px;height:36px;border:1.5px solid rgba(255,241,218,0.3);border-radius:12px;display:flex;justify-content:center}
 .scroll-hint span{display:block;width:3px;height:7px;background:var(--cream);border-radius:2px;margin-top:7px;animation:scrollDot 1.8s ease-in-out infinite}
 @keyframes scrollDot{0%{opacity:0;transform:translateY(0)}40%{opacity:1}80%{opacity:0;transform:translateY(12px)}100%{opacity:0;transform:translateY(12px)}}
-.event{position:relative;padding:90px 0 100px;background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);overflow:hidden;border-top:1px solid rgba(212,168,103,0.15);border-bottom:1px solid rgba(212,168,103,0.15)}
-.event-glow{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(212,168,103,0.18),transparent 70%),radial-gradient(ellipse 60% 40% at 50% 100%,rgba(212,168,103,0.08),transparent 70%);pointer-events:none}
-.event-container{position:relative;text-align:center;max-width:780px}
-.event-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 14px;background:rgba(212,168,103,0.12);border:1px solid rgba(212,168,103,0.4);border-radius:50px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-bright);font-weight:600;margin-bottom:28px}
-.event-pulse{width:8px;height:8px;border-radius:50%;background:var(--gold-bright);position:relative;flex-shrink:0}
-.event-pulse::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--gold-bright);opacity:0.5;animation:eventPulse 1.8s ease-out infinite}
-@keyframes eventPulse{0%{transform:scale(0.6);opacity:0.7}100%{transform:scale(2.4);opacity:0}}
-.event-mic{width:54px;height:54px;margin:0 auto 18px;color:var(--gold-bright);opacity:0.85}
-.event-mic svg{width:100%;height:100%;display:block;filter:drop-shadow(0 4px 12px rgba(212,168,103,0.35))}
-.event-title{font-family:var(--font-display);font-size:clamp(60px,17vw,128px);color:var(--white);line-height:1;letter-spacing:10px;margin-bottom:6px;text-shadow:0 4px 30px rgba(212,168,103,0.25)}
-.event-sub{font-family:var(--font-display);font-style:italic;font-size:clamp(18px,4.5vw,26px);color:var(--gold-bright);margin-bottom:24px;letter-spacing:1px}
-.event-desc{color:var(--text-dim);font-size:16px;line-height:1.7;margin:0 auto 36px;max-width:520px}
-.event-desc em{color:var(--cream);font-style:italic}
-.event-info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 auto 36px;max-width:560px}
-@media(min-width:680px){.event-info-grid{grid-template-columns:repeat(4,1fr);max-width:720px}}
-.event-info-card{background:rgba(255,241,218,0.05);border:1px solid rgba(255,241,218,0.1);border-radius:14px;padding:18px 10px;text-align:center;transition:all 0.4s var(--ease);display:flex;flex-direction:column;gap:4px;min-height:108px;justify-content:center}
-.event-info-card:hover{transform:translateY(-3px);border-color:rgba(212,168,103,0.35);background:rgba(255,241,218,0.08)}
-.event-info-card-feature{background:linear-gradient(160deg,rgba(212,168,103,0.18),rgba(255,241,218,0.04));border-color:rgba(212,168,103,0.45)}
-.event-info-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-bright);font-weight:600}
-.event-info-value{font-family:var(--font-display);font-size:clamp(17px,4.5vw,22px);color:var(--white);line-height:1.1;letter-spacing:0.5px}
-.event-info-hint{font-size:10.5px;color:var(--text-soft);letter-spacing:0.5px;font-style:italic}
-.event-cta{margin:0 auto;padding:18px 36px;font-size:14px;letter-spacing:1.5px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 10px 36px rgba(212,168,103,0.25)}
-.event-cta:hover{box-shadow:0 14px 44px rgba(212,168,103,0.4)}
-.event-cta-arrow{display:inline-block;transition:transform 0.35s var(--ease)}
-.event-cta:hover .event-cta-arrow{transform:translateX(6px)}
-.event-countdown{margin-top:24px;font-family:var(--font-display);font-style:italic;font-size:14px;letter-spacing:1px;color:var(--text-soft)}
-@media(max-width:420px){.event-info-grid{grid-template-columns:1fr;max-width:280px}.event-info-card{min-height:auto;padding:14px}.event-title{letter-spacing:6px}}
 .journey{padding:100px 0;position:relative;background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%)}
 .timeline{position:relative;margin-top:40px;padding-left:28px}
 .timeline::before{content:'';position:absolute;left:10px;top:8px;bottom:8px;width:1.5px;background:linear-gradient(180deg,var(--gold),transparent)}
@@ -274,7 +246,6 @@ em{font-style:italic;color:var(--cream);font-family:var(--font-display)}
     <button class="close-btn" id="closeBtn" aria-label="Close menu">×</button>
     <ul>
       <li><a href="#hero">Home</a></li>
-      <li><a href="#event">Upcoming Event</a></li>
       <li><a href="#journey">Our Journey</a></li>
       <li><a href="#packages">Packages</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -317,67 +288,6 @@ em{font-style:italic;color:var(--cream);font-family:var(--font-display)}
 
     <div class="scroll-hint" aria-hidden="true">
       <span></span>
-    </div>
-  </section>
-
-  <!-- ===== UPCOMING EVENT ===== -->
-  <section class="event" id="event">
-    <div class="event-glow" aria-hidden="true"></div>
-
-    <div class="container event-container">
-      <div class="event-badge reveal">
-        <span class="event-pulse" aria-hidden="true"></span>
-        <span>Upcoming Event</span>
-      </div>
-
-      <div class="event-mic reveal" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
-          <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-          <line x1="12" y1="19" x2="12" y2="23"/>
-          <line x1="8" y1="23" x2="16" y2="23"/>
-        </svg>
-      </div>
-
-      <h2 class="event-title reveal">GOONJ</h2>
-      <p class="event-sub reveal">Nationwide Online Open Mic</p>
-
-      <p class="event-desc reveal">
-        Step into the spotlight from the comfort of your home. Whether it's
-        <em>poetry</em>, <em>storytelling</em>, or <em>singing</em> — join a supportive
-        nationwide community of artists.
-      </p>
-
-      <div class="event-info-grid reveal">
-        <div class="event-info-card">
-          <span class="event-info-label">When</span>
-          <span class="event-info-value">Sun, Jun 7</span>
-          <span class="event-info-hint">2026</span>
-        </div>
-        <div class="event-info-card">
-          <span class="event-info-label">Where</span>
-          <span class="event-info-value">Google Meet</span>
-          <span class="event-info-hint">Live online</span>
-        </div>
-        <div class="event-info-card event-info-card-feature">
-          <span class="event-info-label">Entry</span>
-          <span class="event-info-value">100% Free</span>
-          <span class="event-info-hint">No fee, no catch</span>
-        </div>
-        <div class="event-info-card">
-          <span class="event-info-label">Slots</span>
-          <span class="event-info-value">Limited</span>
-          <span class="event-info-hint">Early bird open</span>
-        </div>
-      </div>
-
-      <a href="https://forms.gle/CVkegCrs8jgHG8yB7" target="_blank" rel="noopener"
-         class="btn btn-primary event-cta reveal">
-        Secure Your Free Slot
-        <span class="event-cta-arrow" aria-hidden="true">→</span>
-      </a>
-
-      <p class="event-countdown reveal" id="eventCountdown">Registrations are open</p>
     </div>
   </section>
 
@@ -711,21 +621,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   const florals=document.querySelectorAll('.floral');
   if(florals.length&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     window.addEventListener('scroll',()=>{const y=window.scrollY;if(y<800){florals.forEach((f,i)=>{const speed=i===0?0.15:-0.12;f.style.transform=`translateY(${y*speed}px)`;});}},{passive:true});}
-  // Event countdown — GOONJ on 2026-06-07 18:00 IST
-  const cdEl=document.getElementById('eventCountdown');
-  if(cdEl){
-    const target=new Date('2026-06-07T18:00:00+05:30').getTime();
-    const tick=()=>{
-      const diff=target-Date.now();
-      if(diff<=0){cdEl.textContent='Happening now — join in!';return;}
-      const d=Math.floor(diff/86400000),h=Math.floor((diff/3600000)%24);
-      if(d>1)cdEl.textContent=`Just ${d} days away`;
-      else if(d===1)cdEl.textContent=`Tomorrow · ${h} hours away`;
-      else if(h>1)cdEl.textContent=`${h} hours left — go go go`;
-      else cdEl.textContent='Final hour — register now';
-    };
-    tick();setInterval(tick,60000);
-  }
 });
   </script>
 </body>
